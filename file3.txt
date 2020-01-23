@@ -1,0 +1,11 @@
+import dialogflow_v2 as dialogflow
+session_client = dialogflow.SessionsClient()
+
+
+1) timeout = session_client._method_configs["DetectIntent"].timeout
+
+2) Attributes of timeout object :
+_deadline = 600
+_initial = 20.0
+_maximum = 20.0
+_multiplier = 1.0
