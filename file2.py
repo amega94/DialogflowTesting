@@ -1,3 +1,4 @@
+### The method_configs is used in the detectIntent requests
 self._method_configs = google.api_core.gapic_v1.config.parse_method_configs(
             client_config["interfaces"][self._INTERFACE_NAME]
         )
@@ -42,3 +43,5 @@ interface_config = client_config["interfaces"][self._INTERFACE_NAME]
 
 
 def parse_method_configs(interface_config):
+"""Creates default retry and timeout objects for each method in a gapic
+    interface config."""
